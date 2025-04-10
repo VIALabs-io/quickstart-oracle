@@ -1,0 +1,117 @@
+/**
+ * Weather Form Styles
+ * ==================
+ * 
+ * Styles for the weather request form component.
+ */
+
+.weather-form-container {
+  background-color: var(--card-background);
+  border-radius: var(--border-radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+}
+
+.weather-form-container h3 {
+  color: var(--primary-color);
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.weather-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-weight: 500;
+  color: var(--text-color);
+  font-size: 16px;
+}
+
+.form-group input {
+  padding: 12px 15px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  font-size: 16px;
+  transition: var(--transition);
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.form-group input:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: var(--error-color);
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.request-button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+  margin-top: 10px;
+}
+
+.request-button:hover:not(:disabled) {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.request-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.request-button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.form-info {
+  margin-top: 25px;
+  padding-top: 15px;
+  border-top: 1px solid var(--border-color);
+}
+
+.form-info p {
+  color: var(--light-text);
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .weather-form-container {
+    padding: 15px;
+  }
+  
+  .form-group input,
+  .request-button {
+    padding: 10px 15px;
+  }
+}
