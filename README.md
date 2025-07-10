@@ -6,7 +6,7 @@ This project demonstrates how to create and deploy a weather oracle using VIA's 
 
 Before you begin, make sure you have:
 
-- Node.js (v20+) and npm
+- Node.js (v22+) and npm
 - Git
 - A private key with testnet funds for deployment
 - Testnet tokens for [Avalanche Testnet](https://faucet.avax.network/)
