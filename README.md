@@ -41,7 +41,7 @@ git clone https://github.com/VIALabs-io/quickstart-oracle.git && cd quickstart-o
 # Install dependencies
 npm install
 
-# Create a .env file with your private keys
+# Create a .env file with your private keys, make sure to copy over "BOOTSTRAP_PEERS" and do NOT edit the value
 cp .env.example .env
 ```
 
@@ -86,7 +86,7 @@ This command requests weather data for the zipcode 90210 (Beverly Hills). The sc
 # Start the frontend
 cd frontend
 npm install
-npm run dev
+npm run start
 ```
 
 ## How It Works
