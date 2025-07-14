@@ -47,6 +47,7 @@ cp .env.example .env
 
 Edit the `.env` file and add:
 - Your private key for deploying contracts (PRIVATE_KEY)
+- The generated P2P key (P2P_PRIVATE_KEY, generated on first run)
 - Your node private key for running the oracle node (NODE_PRIVATE_KEY)
 - Optionally, your OpenWeatherMap API key (WEATHER_API_KEY)
 
